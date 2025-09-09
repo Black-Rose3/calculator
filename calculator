@@ -1,0 +1,29 @@
+Trials = 0
+
+while Trials<3:
+    students_decision=input("choose one of these,'+','/','*','-'")
+    students1_numbers=int(input("enter your first number"))
+    students2_numbers=int(input("enter your second number"))
+
+    if students_decision == "+":
+     answer = (students1_numbers + students2_numbers)
+     print(answer)
+
+    elif students_decision == "/":
+     if students2_numbers !=0:
+        answer = (students1_numbers/students2_numbers)
+        print(answer)
+     else:
+        print("neither of the number should be zero")
+
+    elif students_decision =="*":
+     answer=(students1_numbers*students2_numbers)
+     print(answer)
+
+    elif students_decision== "-":
+     answer=(students1_numbers-students2_numbers)
+     print(answer)
+
+    Trials +=1
+
+print("your chances to use this calculator are over")
